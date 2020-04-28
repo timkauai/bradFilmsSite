@@ -1,0 +1,532 @@
+@font-face {
+  src: url(../fonts/bradleyHand.ttf);
+  font-family: bradleyHand;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #f3f3f3;
+}
+
+.fullsizes {
+  display: -ms-grid;
+  display: grid;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 15% 70% 15%;
+  grid-template-rows: 15% 70% 15%;
+  grid-template-areas: "upper upper" "mid mid" "downer downer";
+}
+
+.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-flow: flex-start;
+  flex-flow: flex-start;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: upper;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: avenir;
+}
+
+.top p {
+  padding: 3% 5%;
+}
+
+.main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: mid;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  font-family: bradleyHand;
+  font-size: 2rem;
+}
+
+.main .mainSlides {
+  border-radius: 5%;
+  background-color: rgba(59, 86, 141, 0.527);
+}
+
+.bottom {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: downer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-family: avenir;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
+
+.bottom .projects {
+  padding-left: 5%;
+}
+
+.bottom .projects a {
+  text-decoration: none;
+  color: #39495a;
+}
+
+.bottom .about {
+  padding-right: 5%;
+}
+
+.bottom .about a {
+  text-decoration: none;
+  color: #39495a;
+}
+
+.projectPage {
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  grid-template-areas: "projectBox1 projectBox2";
+  -ms-grid-columns: 1fr 2fr;
+  grid-template-columns: 1fr 2fr;
+}
+
+.projectLeft {
+  height: 100vh;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: projectBox1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 3fr 15fr 1fr;
+  grid-template-rows: 3fr 15fr 1fr;
+  grid-template-areas: "projectsBox1" "projectsBox2" "projectsBox3";
+  padding-left: 5%;
+  position: fixed;
+}
+
+.projectLeft .projectsTitle {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: projectsBox1;
+  font-family: bradleyHand;
+  font-size: 1.5rem;
+}
+
+.projectLeft .projectsLeftEmpty {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: projectsBox2;
+}
+
+.projectLeft .projectsReturn {
+  margin-left: 2.5%;
+  padding-bottom: 3vw;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: projectsBox3;
+  font-family: avenir;
+  font-size: 2rem;
+}
+
+.projectLeft .projectsReturn .link {
+  text-decoration: none;
+  color: #39495a;
+}
+
+.projectRight {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: projectBox2;
+  background-color: rgba(59, 86, 141, 0.527);
+}
+
+.projectRight .projectLink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-bottom: 5%;
+  text-decoration: none;
+}
+
+.projectRight .landscapeLinks .landscapes {
+  margin-top: 5%;
+  padding: 3% 5% 5% 5%;
+  width: 70%;
+  background-color: rgba(20, 90, 159, 0.548);
+}
+
+.projectRight .landscapeLinks .landscapes .album-cover-copy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.projectRight .landscapeLinks .landscapes .album-cover-copy h1 {
+  font-family: avenir;
+  font-size: 3rem;
+  color: #39495a;
+}
+
+.projectRight .landscapeLinks .landscapes .album-cover-copy p {
+  font-family: avenir;
+  font-size: 1rem;
+  color: #39495a;
+}
+
+.projectRight .products {
+  margin-top: 5%;
+  padding: 3% 5% 5% 5%;
+  width: 70%;
+  background-color: rgba(20, 90, 159, 0.548);
+}
+
+.projectRight .products .album-cover-copy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.projectRight .products .album-cover-copy h1 {
+  font-family: avenir;
+  font-size: 3rem;
+  color: #39495a;
+}
+
+.projectRight .products .album-cover-copy p {
+  font-family: avenir;
+  font-size: 1rem;
+  color: #39495a;
+}
+
+.projectRight .portraits {
+  margin-top: 5%;
+  padding: 3% 5% 5% 5%;
+  width: 70%;
+  background-color: rgba(20, 90, 159, 0.548);
+}
+
+.projectRight .portraits .album-cover-copy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.projectRight .portraits .album-cover-copy h1 {
+  font-family: avenir;
+  font-size: 3rem;
+  color: #39495a;
+}
+
+.projectRight .portraits .album-cover-copy p {
+  font-family: avenir;
+  font-size: 1rem;
+  color: #39495a;
+}
+
+.projectRight .stylistic {
+  margin-top: 5%;
+  padding: 3% 5% 5% 5%;
+  width: 70%;
+  background-color: rgba(20, 90, 159, 0.548);
+}
+
+.projectRight .stylistic .album-cover-copy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.projectRight .stylistic .album-cover-copy h1 {
+  font-family: avenir;
+  font-size: 3rem;
+  color: #39495a;
+}
+
+.projectRight .stylistic .album-cover-copy p {
+  font-family: avenir;
+  font-size: 1rem;
+  color: #39495a;
+}
+
+.projectRight .theCollection {
+  margin-top: 5%;
+  padding: 3% 5% 5% 5%;
+  width: 70%;
+  background-color: rgba(20, 90, 159, 0.548);
+}
+
+.projectRight .theCollection .album-cover-copy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.projectRight .theCollection .album-cover-copy h1 {
+  font-family: avenir;
+  font-size: 3rem;
+  color: #39495a;
+}
+
+.projectRight .theCollection .album-cover-copy p {
+  font-family: avenir;
+  font-size: 1rem;
+  color: #39495a;
+}
+
+.topLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  font-family: avenir;
+  font-size: 3vw;
+  padding-top: 3vh;
+}
+
+.topLinks .home {
+  padding-left: 5vw;
+  text-decoration: none;
+  color: #39495a;
+}
+
+.topLinks .proj {
+  padding-right: 5vw;
+  text-decoration: none;
+  color: #39495a;
+}
+
+.albumPageTopSec {
+  background-color: lightcoral;
+  height: 84vh;
+}
+
+.albumPageSec1 {
+  display: flex;
+  height: 25vh;
+  padding: 7.5vw 7.5vh;
+  font-family: avenir;
+  font-size: 2vw;
+  align-items: center;
+}
+
+.albumPageSec2 {
+  background-color: lightblue;
+  height: 35vh;
+  width: 100%;
+}
+
+.albumPageSec3 {
+  padding: 10vh 10vw;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "box1 box2" "box3 box3";
+  width: 80vw;
+  height: 75vh;
+  grid-row-gap: 2vw;
+  grid-column-gap: 2vh;
+}
+
+.albumPageSec3 .box1 {
+  background-color: rgb(68, 102, 131);
+  grid-area: box1;
+}
+
+.albumPageSec3 .box2 {
+  background-color: rgb(56, 136, 136);
+  grid-area: box2;
+}
+
+.albumPageSec3 .box3 {
+  background-color: saddlebrown;
+  grid-area: box3;
+}
+
+.albumPageSec4 {
+  padding: 10vh 10vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "box1 box2";
+  width: 80vw;
+  height: 75vh;
+  grid-row-gap: 2vw;
+  grid-column-gap: 2vh;
+}
+
+.albumPageSec4 .box1 {
+  background-color: rgb(68, 102, 131);
+  grid-area: box1;
+}
+
+.albumPageSec4 .box2 {
+  background-color: rgb(56, 136, 136);
+  grid-area: box2;
+}
+
+.albumPageSec5 {
+  padding: 10vh 10vw;
+  display: grid;
+  grid-template-columns: 6fr 3fr;
+  grid-template-areas: "box1 box2";
+  width: 80vw;
+  height: 75vh;
+  grid-row-gap: 2vw;
+  grid-column-gap: 4vh;
+}
+
+.albumPageSec5 .box1 {
+  background-color: rgb(68, 102, 131);
+  grid-area: box1;
+}
+
+.albumPageSec5 .box2 {
+  grid-area: box2;
+  font-family: avenir;
+  font-size: 2vw;
+}
+
+.albumPageSec4 .box1 .inner {
+  background-color: #7070703a;
+  font-family: avenir;
+  font-size: 3vw;
+  clip-path: circle(10% at 90% 30%);
+  transition: all 0.5s ease-in-out;
+}
+
+.albumPageSec4 .box1 .inner:hover {
+  clip-path: circle(75%);
+  background-color: #99a8b87c;
+}
+
+.albumPageSec4 .box1 .inner span {
+  float: right;
+  color: white;
+  font-weight: bold;
+  transition: color 0.5s;
+  position: relative;
+  margin-right: 4%;
+}
+
+.albumPageSec4 .box1 .inner:hover span {
+  color: #70707000;
+}
+
+.albumPageHeaderImage img {
+  width: 100%;
+  background-color: white;
+  z-index: 5;
+}
