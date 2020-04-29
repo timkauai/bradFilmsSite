@@ -9,6 +9,7 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #f3f3f3;
+  overflow-x: hidden;
 }
 
 .fullsizes {
@@ -22,7 +23,7 @@ body {
   grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 15% 70% 15%;
   grid-template-rows: 15% 70% 15%;
-  grid-template-areas: "upper upper" "mid mid" "downer downer";
+  grid-template-areas: "upper upper""mid mid""downer downer";
 }
 
 .top {
@@ -144,7 +145,7 @@ body {
   display: grid;
   -ms-grid-rows: 3fr 15fr 1fr;
   grid-template-rows: 3fr 15fr 1fr;
-  grid-template-areas: "projectsBox1" "projectsBox2" "projectsBox3";
+  grid-template-areas: "projectsBox1""projectsBox2""projectsBox3";
   padding-left: 5%;
   position: fixed;
 }
@@ -394,7 +395,6 @@ body {
   height: 10vh;
   font-family: avenir;
   font-size: 3vw;
-  padding-top: 3vh;
 }
 
 .topLinks .home {
@@ -410,35 +410,82 @@ body {
 }
 
 .albumPageTopSec {
-  background-color: lightcoral;
-  height: 84vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  grid-template-rows: max-content max-content 5vh;
+  align-items: center;
+  grid-template-areas: "location title dates"
+    "headerImg headerImg headerImg";
 }
+
+.albumPageTopSec h1 {
+  font-size: 7vw;
+  font-family: bradleyHand;
+  grid-area: title;
+  text-align: center;
+}
+
+.albumPageTopSec h4 {
+  font-size: 1.3vw;
+  font-family: avenir;
+  text-align: center;
+  grid-area: location;
+}
+
+.albumPageTopSec h5 {
+  font-size: 1.3vw;
+  font-family: avenir;
+  text-align: center;
+  grid-area: dates;
+}
+
+
+.albumPageTopSec .Img {
+  width: 80%;
+  margin-left: 10%;
+  max-height: 50vh;
+  object-fit: cover;
+  grid-area: headerImg;
+}
+
+.albumPageHeaderText {
+  display: grid;
+  grid-template-columns: max-content 1fr max-content 1fr max-content;
+  align-items: center;
+}
+
+
 
 .albumPageSec1 {
   display: flex;
   height: 25vh;
-  padding: 7.5vw 7.5vh;
+  padding: 5vw 5vh;
   font-family: avenir;
   font-size: 2vw;
   align-items: center;
+  background-color: #ffffff;
 }
 
 .albumPageSec2 {
-  background-color: lightblue;
-  height: 35vh;
+  max-height: 35vh;
   width: 100%;
+  padding: 5% 0;
+}
+
+.albumPageSec2 .Img {
+  max-height: 35vh;
 }
 
 .albumPageSec3 {
   padding: 10vh 10vw;
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "box1 box2" "box3 box3";
-  width: 80vw;
-  height: 75vh;
+  grid-template-rows: minmax(30vh, max-content) minmax(30vh, max-content);
+  grid-template-columns: minmax(1fr, max-content) minmax(1fr, max-content);
+  grid-template-areas: "box1 box2""box3 box3";
   grid-row-gap: 2vw;
-  grid-column-gap: 2vh;
+  grid-column-gap: 2vw;
+  align-items: center;
 }
 
 .albumPageSec3 .box1 {
@@ -465,6 +512,7 @@ body {
   height: 75vh;
   grid-row-gap: 2vw;
   grid-column-gap: 2vh;
+  align-items: center;
 }
 
 .albumPageSec4 .box1 {
@@ -486,6 +534,7 @@ body {
   height: 75vh;
   grid-row-gap: 2vw;
   grid-column-gap: 4vh;
+  align-items: center;
 }
 
 .albumPageSec5 .box1 {
@@ -497,6 +546,8 @@ body {
   grid-area: box2;
   font-family: avenir;
   font-size: 2vw;
+  background-color: #ffffff;
+  padding: 2rem;
 }
 
 .albumPageSec4 .box1 .inner {
@@ -523,10 +574,4 @@ body {
 
 .albumPageSec4 .box1 .inner:hover span {
   color: #70707000;
-}
-
-.albumPageHeaderImage img {
-  width: 100%;
-  background-color: white;
-  z-index: 5;
 }
