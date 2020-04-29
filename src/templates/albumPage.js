@@ -16,21 +16,21 @@ export default function template({ data }) {
   var sec5LeftInt = 0
 
   for (let i = 0; i < image.length; i++) {
-    if (image[i].name == post.frontmatter.headerName) {
+    if (image[i].name === post.frontmatter.headerName) {
       headerInt = i
-    } else if (image[i].name == post.frontmatter.panoSecName) {
+    } else if (image[i].name === post.frontmatter.panoSecName) {
       panoInt = i
-    } else if (image[i].name == post.frontmatter.sec3TopLeftName) {
+    } else if (image[i].name === post.frontmatter.sec3TopLeftName) {
       topLeftInt = i
-    } else if (image[i].name == post.frontmatter.sec3TopRightName) {
+    } else if (image[i].name === post.frontmatter.sec3TopRightName) {
       topRightInt = i
-    } else if (image[i].name == post.frontmatter.sec3BottomName) {
+    } else if (image[i].name === post.frontmatter.sec3BottomName) {
       bottomInt = i
-    } else if (image[i].name == post.frontmatter.sec4LeftName) {
+    } else if (image[i].name === post.frontmatter.sec4LeftName) {
       leftInt = i
-    } else if (image[i].name == post.frontmatter.sec4RightName) {
+    } else if (image[i].name === post.frontmatter.sec4RightName) {
       rightInt = i
-    } else if (image[i].name == post.frontmatter.sec5Name) {
+    } else if (image[i].name === post.frontmatter.sec5Name) {
       sec5LeftInt = i
     }
   }
