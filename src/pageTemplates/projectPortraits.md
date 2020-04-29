@@ -2,7 +2,7 @@
 path: "/portraits/"
 title: "portraits"
 dates: "2017 to Present"
-location: "Kauai"
+location: "Kauai and Washington"
 descrip1: "Landscape Copy 1"
 descrip2: "Landscape Copy 2"
 descrip3: "Landscape Copy 3"
@@ -16,5 +16,4 @@ sec3BottomName: "Landscape-3.jpg"
 sec4LeftName: "Landscape-3.jpg"
 sec4RightName: "Landscape-3.jpg"
 sec5Name: "Landscape-3.jpg"
----
 ---
