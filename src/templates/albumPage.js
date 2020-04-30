@@ -15,7 +15,7 @@ export default function template({ data }) {
   var rightInt = 0
   var sec5LeftInt = 0
 
-  for (let i = 0; i < image.length; i++) {
+  {/*for (let i = 0; i < image.length; i++) {
     if (image[i].name === post.frontmatter.headerName) {
       headerInt = i
     } else if (image[i].name === post.frontmatter.panoSecName) {
@@ -33,7 +33,7 @@ export default function template({ data }) {
     } else if (image[i].name === post.frontmatter.sec5Name) {
       sec5LeftInt = i
     }
-  }
+  } */}
 
   return (
     <div>
