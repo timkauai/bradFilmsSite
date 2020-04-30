@@ -55,36 +55,36 @@ export default function template({ data }) {
         <div></div>
         <h5> Time Frame: {post.frontmatter.dates} </h5>
         <div></div>
-        <Img
+    {/*<Img
           className="Img"
           fluid={image[headerInt].childImageSharp.fluid}
-        />
+        />*/}
         <div></div>
       </div>
       <div className="albumPageSec1">
         <p>{post.frontmatter.descrip1}</p>
       </div>
       <div className="albumPageSec2">
-        <Img
+    {/*<Img
           className="Img"
           fluid={image[panoInt].childImageSharp.fluid}
-        />
+        />*/}
       </div>
       <div className="albumPageSec3">
         <div className="box1">
-          <Img
+    {/*<Img
             fluid={image[topLeftInt].childImageSharp.fluid}
-          />
+          />*/}
         </div>
         <div className="box2">
-          <Img
+    {/*<Img
             fluid={image[topRightInt].childImageSharp.fluid}
-          />
+          />*/}
         </div>
         <div className="box3">
-          <Img
+    {/*<Img
             fluid={image[bottomInt].childImageSharp.fluid}
-          />
+          />*/}
         </div>
       </div>
       <div className="albumPageSec1">
@@ -92,14 +92,14 @@ export default function template({ data }) {
       </div>
       <div className="albumPageSec4">
         <div className="box1">
-          <Img
+    {/*<Img
             fluid={image[leftInt].childImageSharp.fluid}
-          />
+          />*/}
         </div>
         <div className="box2">
-          <Img
+    {/*<Img
             fluid={image[rightInt].childImageSharp.fluid}
-          />
+          />*/}
         </div>
       </div>
       <div className="albumPageSec1">
@@ -107,9 +107,9 @@ export default function template({ data }) {
       </div>
       <div className="albumPageSec5">
         <div className="box1">
-          <Img
+    {/*<Img
             fluid={image[sec5LeftInt].childImageSharp.fluid}
-          />
+          />*/}
         </div>
         <div className="box2">
           <p>{post.frontmatter.photoDescrip2}</p>
