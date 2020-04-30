@@ -56,8 +56,8 @@ export default function template({ data }) {
         <div></div>
         <Img
           className="Img"
-          id={image[headerInt].id}
-          fluid={image[headerInt].childImageSharp.fluid}
+          id={image[0].id}
+          fluid={image[0].childImageSharp.fluid}
         />
         <div></div>
       </div>
@@ -67,27 +67,27 @@ export default function template({ data }) {
       <div className="albumPageSec2">
         <Img
           className="Img"
-          id={image[panoInt].id}
-          fluid={image[panoInt].childImageSharp.fluid}
+          id={image[0].id}
+          fluid={image[0].childImageSharp.fluid}
         />
       </div>
       <div className="albumPageSec3">
         <div className="box1">
           <Img
-            id={image[topLeftInt].id}
-            fluid={image[topLeftInt].childImageSharp.fluid}
+            id={image[0].id}
+            fluid={image[0].childImageSharp.fluid}
           />
         </div>
         <div className="box2">
           <Img
-            id={image[topRightInt].id}
-            fluid={image[topRightInt].childImageSharp.fluid}
+            id={image[0].id}
+            fluid={image[0].childImageSharp.fluid}
           />
         </div>
         <div className="box3">
           <Img
-            id={image[bottomInt].id}
-            fluid={image[bottomInt].childImageSharp.fluid}
+            id={image[0].id}
+            fluid={image[0].childImageSharp.fluid}
           />
         </div>
       </div>
@@ -97,14 +97,14 @@ export default function template({ data }) {
       <div className="albumPageSec4">
         <div className="box1">
           <Img
-            id={image[leftInt].id}
-            fluid={image[leftInt].childImageSharp.fluid}
+            id={image[0].id}
+            fluid={image[0].childImageSharp.fluid}
           />
         </div>
         <div className="box2">
           <Img
-            id={image[rightInt].id}
-            fluid={image[rightInt].childImageSharp.fluid}
+            id={image[0].id}
+            fluid={image[0].childImageSharp.fluid}
           />
         </div>
       </div>
@@ -114,8 +114,8 @@ export default function template({ data }) {
       <div className="albumPageSec5">
         <div className="box1">
           <Img
-            id={image[sec5LeftInt].id}
-            fluid={image[sec5LeftInt].childImageSharp.fluid}
+            id={image[0].id}
+            fluid={image[0].childImageSharp.fluid}
           />
         </div>
         <div className="box2">
